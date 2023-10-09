@@ -1,0 +1,308 @@
+/* Google Font Family: Roboto*/
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/* To suppress default border and styling and select alt box model*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* To remove list styling */
+li {
+  list-style: none;
+}
+
+#logoContainer {
+  display: flex;
+  align-items: center;
+}
+
+/* Page Title formatting */
+#logoContainer h1 {
+  padding-left: 20px;
+  font-size: 30px;
+}
+#logoContainer h2 {
+  padding-left: 20px;
+  font-size: 20px;
+}
+
+/* Logo sizing */
+#logoContainer img {
+  width: 50px;
+}
+
+/*entire page fonts and colors */
+body {
+  --darkgrey: #363636;
+  --blue: #242f40;
+  --gold: #cca43b;
+  --lightgrey: #e5e5e5;
+  --white: #ffffff;
+  font-family: "Roboto", sans-serif;
+}
+
+#pageHeader {
+  background-color: var(--blue);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  color: var(--white);
+}
+
+/*To display list items inline: https://www.shecodes.io/athena/22112-how-to-display-a-list-horizontally-in-html-and-css#:~:text=To%20present%20a%20list%20horizontally%20instead%20of%20vertically%20in%20HTML,property%20on%20the%20list%20items.&text=This%20will%20display%20the%20bulleted,the%20value%20of%20margin%2Dright%20.*/
+/*For bold font: https://blog.hubspot.com/website/how-to-bold-in-html#:~:text=To%20bold%20text%20for%20decoration,the%20specific%20span%20element%20only.*/
+#navLinks li {
+  display: inline-block;
+  padding: 5px 14px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#navLinks li:hover {
+  background-color: #171616;
+  border-radius: 5px;
+  transition: 0.3s ease;
+  color: var(--blue);
+}
+
+#navBar a {
+  text-decoration: none;
+  color: white;
+}
+
+#navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*For hero section background picture responsiveness: https://www.w3schools.com/cssref/pr_background-image.php*/
+#heroSection {
+  background-image: url("../img/homePgBackground.svg");
+  background-size: cover;
+  height: 500px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#heroLeft {
+  margin-left: 100px;
+}
+
+#heroText {
+  margin-bottom: 50px;
+}
+
+#heroText h2 {
+  font-size: 40px;
+  color: var(--darkgrey);
+}
+
+#heroText p {
+  font-size: 20px;
+  color: var(--darkgrey);
+}
+
+#btnContainer a {
+  text-decoration: none;
+  color: white;
+  background-color: var(--gold);
+  padding: 10px 20px;
+  margin-top: 100px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+#btnContainer a:hover {
+  background-color: var(--darkgrey);
+  transition: 0.3s ease;
+}
+
+/* Picture styling: https://www.w3schools.com/css/css3_images.asp */
+
+#heroSection img {
+  height: 400px;
+  border: 3px solid var(--gold);
+}
+
+#profilePicContainer {
+  margin: 50px;
+}
+
+#mainBody {
+  margin-top: 50px;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 50px;
+}
+
+#quote {
+  /* For text alignment: https://www.w3schools.com/css/css_align.asp*/
+  text-align: center;
+  margin: 50px;
+  font-size: 20px;
+}
+
+#mainPar {
+  margin: 50px;
+  display: flex;
+}
+
+#mainParText {
+  margin-right: 70px;
+}
+
+#mainParText p {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+
+#mainParText a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+#mainPar a:hover {
+  color: var(--gold);
+}
+
+#progressBarContainer {
+  justify-content: center;
+  padding: 50px;
+  background-color: #f2efef;
+}
+
+#progressBarContainer label {
+  text-align: center;
+  display: block;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+/*progress bar styling: https://css-tricks.com/html5-progress-element/ */
+progress[value] {
+  -webkit-appearance: none;
+  width: 200px;
+  height: 20px;
+}
+
+/* How to change background color of progress bar: https://developer.mozilla.org/en-US/docs/Web/CSS/::-webkit-progress-value */
+::-webkit-progress-value {
+  background-color: var(--blue);
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding: 30px;
+  background-color: var(--darkgrey);
+  color: var(--white);
+}
+
+footer p {
+  margin: 10px;
+}
+
+footer a {
+  margin: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+footer a:hover {
+  color: var(--gold);
+}
+
+/*Checkbox hack from class example */
+input[type="checkbox"] {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+  font-size: 40px;
+  user-select: none;
+}
+
+@media (max-width: 875px) {
+  /* Hamburger Menu styling from in class example */
+  #menuItems {
+    display: none;
+    /* for position property: https://www.w3schools.com/css/css_positioning.asp*/
+    position: absolute;
+    background: var(--darkgrey);
+    right: 0;
+    left: 0;
+    top: 95px;
+    text-align: center;
+    padding: 16px 0;
+  }
+
+  /* Resizing of Hero Content for smaller viewport */
+  #heroLeft {
+    margin-left: 50px;
+  }
+
+  #heroSection img {
+    height: 300px;
+  }
+
+  #heroText h2 {
+    font-size: 32px;
+    color: var(--darkgrey);
+  }
+
+  #heroText p {
+    font-size: 18px;
+    color: var(--darkgrey);
+  }
+
+  /* checkbox hack from in class example */
+  input[type="checkbox"]:checked ~ #menuItems {
+    display: block;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  #mainPar {
+    margin: 20px;
+    /*moves progress bar underneath paragraph text */
+    display: block;
+  }
+
+  /*fixes right margin of paragraph text so it is centered in window */
+  #mainParText {
+    margin: 0px;
+  }
+
+  /*adjust format of progressBarContainer for block display */
+  #progressBarContainer label {
+    text-align: left;
+    display: block;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+
+  /*adjust footer display so that social media layout does not get messed up*/
+  footer {
+    display: block;
+    text-align: center;
+    padding: 30px;
+    background-color: var(--darkgrey);
+    color: var(--white);
+  }
+}

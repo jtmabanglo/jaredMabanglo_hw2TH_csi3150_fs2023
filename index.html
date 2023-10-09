@@ -5,70 +5,139 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jared Mabanglo | Portfolio Website</title>
     <link rel="shortcut icon" href="img/Favicon2.png" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/a2769b4633.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header id="pageHeader">
-      <h1>Jared Mabanglo - Portfolio Website</h1>
+      <div id="logoContainer">
+        <img
+          src="./img/Favicon2.png"
+          alt="Logo for Jared Mabanglo Portfolio Website"
+        />
 
-      <div id="navContainer">
-        <nav id="navBar">
-          <a href="index.html"> <strong> Home </strong> • </a>
-          <a href="./html/my_fun_facts.html">Fun Facts • </a>
-          <a href="./html/my_resume.html">Resume</a>
-        </nav>
+        <div id="titleContainer">
+          <h1>JARED MABANGLO</h1>
+          <h2>Portfolio Website</h2>
+        </div>
       </div>
+
+      <nav id="navBar">
+        <ul id="navLinks">
+          <!-- hamburger menu icon and checkbox hack from class example-->
+          <input type="checkbox" id="checkbox_toggle" />
+          <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+          <div id="menuItems">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="./html/my_fun_facts.html">Fun Facts </a></li>
+            <li><a href="./html/my_resume.html">Resume</a></li>
+          </div>
+        </ul>
+      </nav>
     </header>
 
-    <hr />
-
     <main>
-      <div id="profilePicAndQuoteContainer">
-        <img
-          src="img/jaredPicture.jpeg"
-          alt="Picture of Jared Mabanglo"
-          width="163"
-          height="245"
-        />
-        <!-- For indenting, I used blockquote as suggested here: https://wonderdevelop.com/how-to-indent-in-html-without-css/-->
-        <blockquote>"There is more happiness in giving than there is in receiving." - Acts 20:35<blockquote>
-      </div>
+      <section id="heroSection">
+        <div id="heroLeft">
+          <div id="heroText">
+            <h2>Welcome to my Portfolio Website!</h2>
+            <p>
+              My name is Jared Mabanglo. I am a senior majoring in Computer
+              Science at Oakland University.
+            </p>
+          </div>
 
-      <p>Welcome to my Portfolio Website! My name is Jared Mabanglo. I am a senior majoring in Computer Science at
-        Oakland University. Through my school coursework, I have gained experience in Java, C, and am currently learning HTML and CSS.
-        I have gained some experience in my current position in a Home Health Care Agency, helping the agency navigate a transition from paper medical records to
-        an Electronic Medical Records platform and navigaing a change to a new HIPAA-Compliant Communications platform, which afforded me opportunities to gain 
-        experience working with clients on finding the best solution possible to meet their needs, and training the staff to be adequately
-        equipped to utilize this new software.
-      </p>
-      <p>Currently, I am looking for internship opportunities to gain more experience in the field. I am interested in Software Engineering
-        and would like to gain experience in both Front and Back End Development. From my background I do have experience in working in the Health
-        Care sector, but am open to exploring job opportunities in other sectors as well!
-      </p>
-      <p>To learn more about me, please visit my <a href="./html/my_fun_facts.html">Fun Facts</a> page and my <a href="./html/my_resume.html">Resume</a> page.</p>
+          <div id="btnContainer">
+            <a href="./html/my_resume.html">LEARN MORE</a>
+          </div>
+        </div>
 
-      <!--To learn how to do this, I checked this resource:
-      https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress
-      -->
+        <div id="profilePicContainer">
+          <img src="img/jaredPicture.jpeg" alt="Picture of Jared Mabanglo" />
+          <!--Removed indentation for styling purposes-->
+        </div>
+      </section>
 
-      <section id="progressBar">
-        <label for="progressBar"><strong>Progress Towards My Degree:</strong></label>
-        <br />
-        <progress id="progressBar" value="106" max="128">83%</progress>
-        <br />
-        <label for="progressBar"> 106 credits earned / 128 minimum credits = 83%</label>
+      <section id="mainBody">
+        <h3 id="quote">
+          "There is more happiness in giving than there is in receiving." - Acts
+          20:35
+        </h3>
+
+        <section id="mainPar">
+          <div id="mainParText">
+            <p>
+              Welcome to my Portfolio Website! My name is Jared Mabanglo. I am a
+              senior majoring in Computer Science at Oakland University. Through
+              my school coursework, I have gained experience in Java, C, and am
+              currently learning HTML and CSS. I have gained some experience in
+              my current position in a Home Health Care Agency, helping the
+              agency navigate a transition from paper medical records to an
+              Electronic Medical Records platform and navigaing a change to a
+              new HIPAA-Compliant Communications platform, which afforded me
+              opportunities to gain experience working with clients on finding
+              the best solution possible to meet their needs, and training the
+              staff to be adequately equipped to utilize this new software.
+            </p>
+            <p>
+              Currently, I am looking for internship opportunities to gain more
+              experience in the field. I am interested in Software Engineering
+              and would like to gain experience in both Front and Back End
+              Development. From my background I do have experience in working in
+              the Health Care sector, but am open to exploring job opportunities
+              in other sectors as well!
+            </p>
+            <p>
+              To learn more about me, please visit my
+              <a href="./html/my_fun_facts.html">Fun Facts</a> page and my
+              <a href="./html/my_resume.html">Resume</a> page.
+            </p>
+          </div>
+
+          <section id="progressBarContainer">
+            <label for="progressBar">Progress Towards My Degree:</label>
+
+            <progress id="progressBar" value="106" max="128">83%</progress>
+
+            <label for="progressBar">
+              106 credits earned / 128 minimum credits = 83%</label
+            >
+          </section>
+        </section>
+
+        <!--To learn how to do this, I checked this resource:
+         https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress
+         -->
       </section>
     </main>
 
-    <hr />
-
     <footer>
-      <p>© Jared Mabanglo, CSE, Oakland University 2023.</p>
-      <p>
-        Social Media: 
-        <a href="https://www.instagram.com">Instagram</a>
-        <a href="https://www.facebook.com">Facebook</a>
-        <a href="mailto:jt.mabanglo@gmail.com">Email</a>
-      </p>
+      <div id="copyrightInfo">
+        <p>© Jared Mabanglo, CSE, Oakland University 2023.</p>
+      </div>
+
+      <div id="socialMedia">
+        <p>
+          Social Media:
+          <!--how to make an image a link: https://www.html.am/html-codes/links/html-image-link.cfm#:~:text=To%20create%20an%20image%20in,page%20in%20a%20new%20window. -->
+          <!--how to add icons from fontawesome: https://fontawesome.com/docs/web/add-icons/how-to-->
+          <a href="https://www.instagram.com">
+            <i class="fa-brands fa-instagram"></i>
+            Instagram</a
+          >
+          <a href="https://www.facebook.com">
+            <i class="fa-brands fa-facebook"></i>
+            Facebook</a
+          >
+          <a href="mailto:jt.mabanglo@gmail.com">
+            <i class="fa-solid fa-envelope"></i>
+            Email</a
+          >
+        </p>
+      </div>
     </footer>
   </body>
 </html>
